@@ -7,17 +7,17 @@ Consultez les captures d'écran du rapport pour voir les nouvelles instructions 
 Pour compiler la toolchain avec les nouvelles instructions, suivez les étapes suivantes :
 
 1. Clonez le dépôt [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain) et [riscv-opcodes](https://github.com/riscv/riscv-opcodes).
-2. Suivez les instructions du README pour installer une première fois la toolchain.
+2. Suivez les instructions du README pour installer une première fois la toolchain (riscv-gnu-toolchain).
 3. Modifiez le fichier `rv_i` (~/riscv-opcodes/rv_i) avec les nouvelles instructions.
 4. Exécutez la commande `make` dans le répertoire ~/riscv-opcodes.
 5. Modifiez les fichiers `riscv-opc.h` (riscv-gnu-toolchain/binutils/include/opcode/riscv-opc.h) et `riscv-opc.c`  (riscv-gnu-toolchain/binutils/opcodes/riscv-opc.c) avec les nouvelles instructions et leurs MATCH et MASK.
 
-Après ces étapes, vous pourrez recompiler la toolchain avec les nouvelles instructions.
+Pour plus de détails consultez : [tuto](https://pcotret.gitlab.io/riscv-custom/sw_toolchain.html#adding-a-custom-instruction-in-the-cross-compiler)
 
+Après ces étapes, vous pourrez recompiler la toolchain avec les nouvelles instructions.
 `cd ~/riscv-gnu-toolchain`
 `sudo make clean`
 `sudo make`
-
 ATTENTION : > 1h
 
 ## Test de la toolchain
