@@ -14,11 +14,11 @@ Pour compiler la toolchain avec les nouvelles instructions, suivez les étapes s
 
 Après ces étapes, vous pourrez recompiler la toolchain avec les nouvelles instructions.
 
-`cd ~/riscv-gnu-toolchain`
-`sudo make clean`
-`sudo make`
+1.`cd ~/riscv-gnu-toolchain`
+2.`sudo make clean`
+3.`sudo make`
 
-ATTENTION : Plus de 1h de compilatin attendu
+ATTENTION : > 1h
 
 ## Test de la toolchain
 
