@@ -1,0 +1,24 @@
+
+main:     format de fichier elf32-littleriscv
+
+
+Déassemblage de la section .text :
+
+00000000 <main>:
+   0:	fe010113          	add	sp,sp,-32
+   4:	00812e23          	sw	s0,28(sp)
+   8:	02010413          	add	s0,sp,32
+   c:	00500793          	li	a5,5
+  10:	fef42623          	sw	a5,-20(s0)
+  14:	00200793          	li	a5,2
+  18:	fef42423          	sw	a5,-24(s0)
+  1c:	fec42783          	lw	a5,-20(s0)
+  20:	0027e7ab          	cormuli	a5,a5,2
+  24:	fef42223          	sw	a5,-28(s0)
+  28:	fe442783          	lw	a5,-28(s0)
+  2c:	fef42023          	sw	a5,-32(s0)
+  30:	00000793          	li	a5,0
+  34:	00078513          	mv	a0,a5
+  38:	01c12403          	lw	s0,28(sp)
+  3c:	02010113          	add	sp,sp,32
+  40:	00008067          	ret
