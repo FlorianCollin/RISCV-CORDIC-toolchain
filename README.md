@@ -1,8 +1,8 @@
 ## Projet CORDIC Toolchain
-Ce repo à pour but de faciliter l'implémentation d'instruction CORDIC dans la toolchain, mais surtout d'accompgner le rapport `rapport.pdf`.
+Ce repo à pour but de faciliter l'implémentation d'instruction CORDIC dans la toolchain, mais surtout d'accompagner le rapport `rapport.pdf`.
 
-- /libcordic : condient des fichiers de test (asm, C) et des script shell regroupant les commandes pout l'obtention des .hex
-- encoding.out.h : fichier générer par /riscv-opcodes après modification de /riscv-opcodes/rv_i et execution du makefile (`make`). Je fourni le fichier pour vérifier que la génération ne comporte pas d'erreur.
+- /libcordic : condient des fichiers de test (asm, C) et des scripts shell regroupant les commandes pout l'obtention des .hex
+- encoding.out.h : fichier généré par /riscv-opcodes après modification de /riscv-opcodes/rv_i et execution du makefile (`make`). Je fourni le fichier pour vérifier que la génération ne comporte pas d'erreur.
 - riscv-opc.c : fichier à modifier dans votre toolchain
 - riscv-opc.h : fichier à modifier dans votre toolchain
 ## Compilation de la toolchain
