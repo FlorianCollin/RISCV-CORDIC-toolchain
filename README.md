@@ -14,10 +14,14 @@ Pour compiler la toolchain avec les nouvelles instructions, suivez les étapes s
 
 Après ces étapes, vous pourrez recompiler la toolchain avec les nouvelles instructions.
 
+`cd ~/riscv-gnu-toolchain`
+`sudo make clean`
+`sudo make`
+
+ATTENTION : Plus de 1h de compilatin attendu
+
 ## Test de la toolchain
 
-Utilisez le script `stohex.sh` pour générer les fichiers hexadécimaux à partir des fichiers assembleurs. Assurez-vous d'avoir les fichiers `.s` prêts pour les tests.
-
-## Conclusion
-
-Ce projet nous a permis d'approfondir notre expertise dans les outils liés à l'architecture RISC-V. L'ajout d
+Utilisez le script `stohex.sh` pour générer les fichiers hexadécimaux à partir des fichiers assembleurs. 
+Utilisez le script `ctohex.sh` pour générer les fichiers hexadécimaux à partir des fichiers C. 
+Exemple : `./stohex.sh testcordic1.s` ou `./ctohex.sh test_add.c`
