@@ -28,3 +28,5 @@ ATTENTION : > 1h
 Utilisez le script `stohex.sh` pour générer les fichiers hexadécimaux à partir des fichiers assembleurs. 
 Utilisez le script `ctohex.sh` pour générer les fichiers hexadécimaux à partir des fichiers C. 
 Exemple : `./stohex.sh testcordic1.s` ou `./ctohex.sh test_add.c`
+
+Pour décoder une instrucion hexadecimal, je conseille l'utilisation de ce site très pratique [lien](https://luplab.gitlab.io/rvcodecjs/) (LupLab @ University of California, Davis)
